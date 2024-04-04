@@ -1,0 +1,514 @@
+/* Imports */
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+/* Variables */
+
+:root {
+  /* Fonts */
+  --main-font: Roboto;
+
+  /* Colors */
+  --red-color: #f80051;
+  --blue-color: #072d7c;
+  --dark-color: #171a21;
+  --bg-primary-light: #eff6f7;
+
+  /* Spacing */
+  --extra-big-spacing: 80px;
+  --big-spacing: 40px;
+  --normal-spacing: 20px;
+  --small-spacing: 10px;
+
+  /* Box Shadow */
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  /* Border Radius */
+  --border-radius: 5px;
+
+  --border-radius-btn-big: 25px;
+  --border-radius-btn-normal: 15px;
+  --border-radius-btn-small: 5px;
+}
+
+/* Reset */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: var(--main-font);
+  color: var(--dark-color);
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Utilities */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.extra-big-spacing {
+  height: var(--extra-big-spacing);
+}
+
+.big-spacing {
+  height: var(--big-spacing);
+}
+
+.normal-spacing {
+  height: var(--normal-spacing);
+}
+
+.small-spacing {
+  height: var(--small-spacing);
+}
+
+
+.header{
+  display: flex;
+  background-color: rgb(73, 50, 6);
+  width: 100%;
+  height: 900px;
+}
+
+.hero_container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/img/hero-image.jpg);
+  background-size: cover ;
+  background-position: top ;
+  
+}
+.header_container{
+  
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height:  80px;
+  
+}
+.container_logo{
+  margin-left: 90px;
+  width: 150px;
+  height: 150px;
+}
+
+.logo_img{
+  width: 100%;
+  height: 100%;
+}
+
+.container_Nav{
+  margin: auto;
+  width: 500px;
+  height: 10px;
+}
+
+.Nav_list{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.Element_list{
+  margin-left: 20px;
+}
+.container_btn{
+  margin-top: 20px;
+  margin-right: 90px;
+
+}
+.headeṛ-btn{
+  color: var(--bg-primary-light);
+  background-color: var(--blue-color);
+  border-color: transparent;
+  border-radius: 20px;
+
+  height: 30px;
+  width: 80px;
+}
+
+.Hero-text-container{
+  margin: auto;
+}
+.title{
+  font-size: 50px;
+  
+  color: var(--bg-primary-light);
+}
+.span-hero{
+  color: var(--red-color)
+}
+
+.Choosee-your{
+  width: 100%;
+  height: auto;
+}
+
+.Container-principal-Banner{
+display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.mid-1{
+  margin-top: 40px;
+  width: 50%;
+  margin-left: 100px;
+}
+
+.subtitle-banner{
+  width: 90%;
+  font-size: 100px;
+}
+
+.mid-2{
+  margin: auto;
+  width: 50%;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.parraf-banner{
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.OurServices-subtitle{
+  width: 100%;
+  text-align: center  ;
+  
+}
+
+.subtitle-Our{
+  font-size: 35px;
+}
+
+.container-row-services{
+  margin: auto  ;
+  display: flex;
+  width: 90%;
+  height: 500px;
+}
+
+.target-services{
+  margin: auto  ;
+  height: 400px;
+  width: 370px;
+  border-color: #0333a5;
+  border-right: 1px solid
+}
+.container-img-services{
+  width: 100%;
+  height: 50%;
+}
+
+.img-services-svg{
+  width: 100%;
+  height: 100%;
+}
+
+.row{
+  font-size: 50px;
+}
+
+.container-treiners{
+  display: flex;
+  background-color: rgb(90, 90, 90);
+  width: 100%;
+  height: 400px;
+
+}
+
+#Target-Trainers-1{
+  height: 400px;
+  width: 500px;
+  background-image: url(/assets/img/nika.jpg);
+  background-size: cover;
+
+}
+
+#Target-Trainers-2{
+  height: 400px;
+  width: 500px;
+  background-image: url(/assets/img/miguel.jpg);
+  background-size: cover;
+
+}
+
+#Target-Trainers-3{
+  opacity: 0.9;
+  height: 400px;
+  width: 500px;
+  background-image: url(/assets/img/borba.jpg);
+  background-size: cover;
+
+}
+
+#Target-Trainers-4{
+  height: 400px;
+  width: 500px;
+  background-image: url(/assets/img/liz.jpg);
+  background-size: cover;
+
+}
+
+.img-trainer{
+  width: 100%;
+  height: 100;
+}
+
+.name-trainer{
+  color: var(--bg-primary-light);
+}
+
+.sup-text-trainer{
+  color: var(--bg-primary-light);
+  margin-top: 60%;
+}
+
+.parraf-trainer{
+  color: var(--bg-primary-light);
+}
+
+.courses{
+  width: 100%;
+  height: auto;
+  background-color:var(--bg-primary-light);
+}
+
+.sup-text-courses{
+  
+  font-size: 17px;
+}
+
+.Courses-text-container{
+  width: auto;
+  height: auto;
+  margin-left: 30px;
+  
+}
+.sup-text-courses{
+  margin-top: 5px;
+}
+.container-cousers{
+  
+  margin: auto;
+  display: flex;
+  margin-top: 30px;
+  width: 90% ;
+  height: 600px;
+}
+
+.Target-course{
+  width: 400px;
+  height: 410px;
+  margin: auto;
+  margin-right: 20px;
+  background-color: #ffffff;
+}
+
+.container-courses.img{
+  width: 100%;
+  height: 50%;
+}
+
+.img-courses{
+  width: 100%;
+}
+
+.Container-text-courses{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.parraf-course{
+  margin-left: 5px;
+}
+
+.title-course{
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.hr{
+  width: 95%;
+}
+
+.incons-containers{
+  display: flex;
+  flex-direction: row;
+  width:  100%;
+  height: 50px;
+  justify-content: space-between;
+}
+.container-icon{
+  display: flex;
+  flex-direction: row;
+  
+}
+.icon-svg{
+  width: 30%;
+  height: auto;
+}
+.parraf-lesson{
+  margin-left: 5px;
+  margin: auto;
+}
+
+.Heatly-section{
+  width: 100%;
+  height: auto;
+}
+
+.Container-heatly{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.mid-image{
+  margin: auto;
+  width: 60%;
+  height: 500px;
+}
+
+.img-container-heatly{
+  width: 50%;
+  height: auto;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.img-heatly{
+  width: 80%;
+  height: auto;
+  
+}
+.tex-heatly{
+  position: relative;
+  top: -305px;
+  left: 400px;
+  background-color: var(--dark-color);
+  width: 30%;
+  height: 60%;
+  justify-content: center;
+  justify-items: center;
+}
+
+.tex-heatly-title{
+  color: var(--bg-primary-light);
+  margin-left: 10%;
+  font-size: 60px;
+}
+
+.mid-tex{
+  width: 30%;
+  height: 500px;
+  margin-right: 300px;
+}
+
+.container-Text-Heatly{
+  margin-top: 70px;
+}
+
+.tex-heatly-title-principal{
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.sup-heatly{
+  margin-bottom: 20px;
+}
+
+.parraf-heatly{
+  width: 500px;
+  margin-bottom: 20px;
+}
+.element-list-heatly{
+  margin-bottom: 10px;
+}
+
+.logos-marcs{
+  margin-top: 123px;
+  width: 100%;
+  height: 100px;
+}
+
+.container-logos{
+  width: 200px;
+  height: auto;
+}
+
+.logo-empresa{
+  width: 100%;
+  height: auto;
+}
